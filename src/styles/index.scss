@@ -11,3 +11,34 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+body {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.player {
+    background-color: #667;
+    max-width: 500px;
+    width: 100%;
+    
+    ul {
+        list-style: none;
+        max-height: 500px;
+        // Allows for scroll in y-direction
+        overflow-y: auto;
+        color:white;
+        background-color: black;
+        height: 100%;
+        
+        li:not(:last-of-type) {
+            border-bottom: 1px solid lightgray;
+        }
+    }
+}
+
